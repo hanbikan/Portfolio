@@ -1,0 +1,19 @@
+.Home{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #202442;
+  height:100%;
+}
+.home_text{
+  font-size: 3rem;
+  color: white;
+}
+.home_button{
+  margin-top: 1rem;
+  background-color: #25294a !important;
+  border-radius: 2rem 2rem !important;
+  border: 0.125rem solid white !important;
+}
