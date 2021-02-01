@@ -9,17 +9,17 @@ class About extends React.Component {
     return (
       <div className="About">
         <div className="about_title">
-          <a className="at_text color-black no-text-decoration"> ABOUT </a>
+          <p className="at_text text"> ABOUT </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
           }} className="underline"></div>
         </div>
-        <div className="about_introduce">
+        <div className="about_introduce object">
           <img className="ai_portrait" src={img_portrait}/>
-          <a className="ai_text color-black no-text-decoration">
+          <p className="ai_text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </a>
+          </p>
         </div>
       </div>
     );

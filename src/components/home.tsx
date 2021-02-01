@@ -7,10 +7,9 @@ class Home extends React.Component {
   render(){
     return (
       <div className="Home">
-        <a className="home_text color-white no-text-decoration">
+        <p className="home_text">
           " Center Text "
-        </a>
-        <button className="home_button btn btn-lg color-white"> Click Here </button>
+        </p>
       </div>
     );
   };

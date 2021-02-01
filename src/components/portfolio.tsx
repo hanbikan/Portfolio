@@ -10,20 +10,39 @@ import img_classical5 from '../images/portfolio/classical/5.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 
 class Portfolio extends React.Component {
+  componentDidMount(){
+    window.addEventListener('scroll', this.onScroll);
+  }
+
+  onScroll = () => {
+    const elems = Array.from(document.getElementsByClassName('portfolio') as HTMLCollectionOf<HTMLElement>);
+    elems.forEach((elem:HTMLElement) => {
+      if(!this.isElementUnderBottom(elem, 0)){
+        elem.style.width = "40rem";
+      }
+    })
+  }
+
+  isElementUnderBottom(elem: HTMLElement, offsetY: number){
+    const {bottom} = elem.getBoundingClientRect();
+    const {innerHeight} = window;
+    return bottom > innerHeight - offsetY;
+  }
+
   render(){
     return (
       <div className="Portfolio">
         <div className="portfolio_title">
-          <a className="pt_text no-text-decoration color-black"> PORTFOLIO </a>
+          <p className="pt_text text"> PORTFOLIO </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
           }} className="underline"></div>
         </div>
         <div className="portfolio_list">
-          <div className="portfolio">
+          <div className="portfolio object">
             <div className="pf_left">
-              <Carousel className="carousel">
+              <Carousel className="carousel" interval={100000}>
                 <Carousel.Item>
                   <img className="d-block w-100" src={img_classical1} alt="Classical" />
                 </Carousel.Item>
@@ -42,7 +61,29 @@ class Portfolio extends React.Component {
               </Carousel>
             </div>
             <div className="pf_right">
-              
+              <div className="pf_right_header">
+                <p className="pf_title">Classical</p>
+                <p className="pf_date">20.12-21.01</p>
+              </div>
+              <div className="pf_right_content">
+                <p className="pf_text">
+                  Classical은 클래식 음악을 주제로 둔 커뮤니티 프로젝트입니다. 2020년 10월에 시작한 웹 공부의 첫 성과물입니다.
+                </p>
+                <div className="pf_tags">
+                  <a className="tag cursor-pointer">#HTML </a>
+                  <a className="tag cursor-pointer">#Javascript </a>
+                  <a className="tag cursor-pointer">#NodeJS </a>
+                  <a className="tag cursor-pointer">#MongoDB </a>
+                </div>
+              </div>
+              <div className="pf_right_footer">
+                <button className="pf_link" onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href='http://ec2-3-86-114-208.compute-1.amazonaws.com/';
+                }}>
+                  Link {'>'}
+                </button>
+              </div>
             </div>
           </div>
         </div>

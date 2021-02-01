@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
 .color-white{
   color: white !important;
 }
@@ -10,12 +12,34 @@
 .color-black:hover{
   color: black !important;
 }
+.tag{
+  color: #3f729b !important;
+}
+.tag:hover{
+  color: #3f729b !important;
+}
 .no-text-decoration{
   text-decoration: none !important;
 }
 .no-text-decoration:hover{
   text-decoration: none !important;
 }
+.text{
+  transition-duration: 1s;
+  margin-left:20rem;
+  opacity: 0;
+}
 .underline{
-  background-color: black;
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  margin-left:20rem;
+  opacity: 0;
+}
+.object{
+  transition-delay: 0.4s;
+  transition-duration: 1s;
+  opacity: 0;
+}
+.cursor-pointer{
+  cursor: pointer;
 }

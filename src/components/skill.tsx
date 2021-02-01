@@ -12,11 +12,36 @@ import img_ts from '../images/skill/ts.png';
 import img_react from '../images/skill/react.png';
 
 class Skill extends React.Component {
+  componentDidMount(){
+    window.addEventListener('scroll', this.onScroll);
+    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('sl_img') as HTMLCollectionOf<HTMLElement>);
+    let delay:number = 0.4;
+    const timeToAdded:number = 0.07;
+    elems.forEach((elem:HTMLElement) => {
+      elem.style.transitionDelay = delay+'s';
+      delay+=timeToAdded;
+    })
+  }
+
+  onScroll = () => {
+    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('sl_img') as HTMLCollectionOf<HTMLElement>);
+    elems.forEach((elem:HTMLElement) => {
+      if(!this.isElementUnderBottom(elem, 0)){
+        elem.style.opacity = "100";
+      }
+    })
+  }
+
+  isElementUnderBottom(elem: HTMLElement, offsetY: number){
+    const {top} = elem.getBoundingClientRect();
+    const {innerHeight} = window;
+    return top > innerHeight - offsetY;
+  }
   render(){
     return (
       <div className="Skill">
         <div className="skill_title">
-          <a className="st_text no-text-decoration color-black"> Skills </a>
+          <p className="st_text text"> Skills </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
