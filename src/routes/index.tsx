@@ -5,11 +5,13 @@ import About from '../components/about';
 import Skill from '../components/skill';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
+import Footer from '../components/footer';
 import './index.css';
 
 class Index extends React.Component {
   componentDidMount(){
     window.addEventListener('scroll', this.onScroll);
+    this.onScroll();
   }
 
   onScroll = () => {
@@ -33,6 +35,11 @@ class Index extends React.Component {
         elem.style.opacity = "100";
       }
     })
+
+    let lastElem = document.getElementsByClassName('contact_form')[0] as HTMLElement;
+    if(!this.isElementUnderBottom(lastElem, 0)){
+      window.removeEventListener('scroll', this.onScroll);
+    }
   }
 
   isElementUnderBottom(elem: HTMLElement, offsetY: number){
@@ -48,6 +55,7 @@ class Index extends React.Component {
         <Skill />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     );
   };

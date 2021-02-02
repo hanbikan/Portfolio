@@ -10,4 +10,11 @@
 .home_text{
   font-size: 3rem;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+}
+.home_text b{
+  color: #de0581;
 }

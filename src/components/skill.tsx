@@ -21,21 +21,33 @@ class Skill extends React.Component {
       elem.style.transitionDelay = delay+'s';
       delay+=timeToAdded;
     })
+    this.onScroll();
   }
 
   onScroll = () => {
     let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('sl_img') as HTMLCollectionOf<HTMLElement>);
-    elems.forEach((elem:HTMLElement) => {
-      if(!this.isElementUnderBottom(elem, 0)){
+    if(!this.isElementUnderBottom(elems[0], 0)){
+      elems.forEach((elem:HTMLElement, i:number) => {
+        elem.style.transitionDuration="1s";
         elem.style.opacity = "100";
-      }
-    })
+        elem.style.transform = "scale(1)";
+      })
+      window.removeEventListener('scroll', this.onScroll);
+    }
   }
 
   isElementUnderBottom(elem: HTMLElement, offsetY: number){
     const {top} = elem.getBoundingClientRect();
     const {innerHeight} = window;
     return top > innerHeight - offsetY;
+  }
+
+  handleHover = (e) => {
+    let sl_hover = document.getElementsByClassName('sl_hover')[0] as HTMLElement;
+    sl_hover.style.left = window.pageXOffset+e.target.getBoundingClientRect().left+'px';
+    sl_hover.style.top = window.pageYOffset+e.target.getBoundingClientRect().top+'px';
+    sl_hover.style.width = e.target.offsetWidth+'px';
+    sl_hover.innerText = e.target.id;
   }
   render(){
     return (
@@ -48,15 +60,16 @@ class Skill extends React.Component {
           }} className="underline"></div>
         </div>
         <div className="skill_list">
-          <img className="sl_img" src={img_html} />
-          <img className="sl_img" src={img_css} />
-          <img className="sl_img" src={img_js} />
-          <img className="sl_img" src={img_ts} />
-          <img className="sl_img" src={img_react} />
-          <img className="sl_img" src={img_nodejs} />
-          <img className="sl_img" src={img_mongodb} />
-          <img className="sl_img" src={img_ps} />
+          <img className="sl_img" src={img_html} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_css} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_js} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_ts} id="Junior" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_react} id="Junior" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_nodejs} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_mongodb} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_ps} id="Middle" onMouseOver={this.handleHover} />
         </div>
+        <p className="sl_hover"></p>
       </div>
     );
   };

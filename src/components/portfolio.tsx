@@ -63,7 +63,6 @@ class Portfolio extends React.Component {
             <div className="pf_right">
               <div className="pf_right_header">
                 <p className="pf_title">Classical</p>
-                <p className="pf_date">20.12-21.01</p>
               </div>
               <div className="pf_right_content">
                 <p className="pf_text">
@@ -79,7 +78,7 @@ class Portfolio extends React.Component {
               <div className="pf_right_footer">
                 <button className="pf_link" onClick={(e) => {
                   e.preventDefault();
-                  window.location.href='http://ec2-3-86-114-208.compute-1.amazonaws.com/';
+                  window.location.href='https://github.com/hanbit-kang/Classical';
                 }}>
                   Link {'>'}
                 </button>
