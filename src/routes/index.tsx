@@ -5,6 +5,7 @@ import About from '../components/about';
 import Skill from '../components/skill';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
+import Menubar from '../components/menubar';
 import Footer from '../components/footer';
 import './index.css';
 
@@ -49,12 +50,13 @@ class Index extends React.Component {
   }
   render(){
     return (
-      <div>
+      <div className="index">
         <Home />
         <About />
         <Skill />
         <Portfolio />
         <Contact />
+        <Menubar />
         <Footer />
       </div>
     );

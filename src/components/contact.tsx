@@ -40,7 +40,7 @@ class Contact extends React.Component {
 
   render(){
     return (
-      <div className="Contact">
+      <div className="Contact" id="Contact">
         <div className="contact_title">
           <p className="ct_text text"> Contact </p>
           <div style={{

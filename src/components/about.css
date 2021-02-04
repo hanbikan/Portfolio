@@ -21,17 +21,22 @@
 
 .about_introduce{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 2rem;
   padding: 2rem;
   width:80%;
 }
 .ai_portrait{
-  width: 15rem;
-  height: 15rem;
+  height: 12.5rem;
+  border-radius: 2.5rem 2.5rem;
+  margin-bottom: 1rem;
 }
 .ai_text{
-  font-size: 1.5rem;
-  margin-left: 2rem;
+  min-width: 30rem;
+  max-width: 50rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-left: 3rem;
 }

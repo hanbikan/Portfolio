@@ -51,7 +51,7 @@ class Skill extends React.Component {
   }
   render(){
     return (
-      <div className="Skill">
+      <div className="Skill" id="Skill">
         <div className="skill_title">
           <p className="st_text text"> Skills </p>
           <div style={{

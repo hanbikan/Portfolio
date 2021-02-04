@@ -31,7 +31,7 @@ class Portfolio extends React.Component {
 
   render(){
     return (
-      <div className="Portfolio">
+      <div className="Portfolio" id="Portfolio">
         <div className="portfolio_title">
           <p className="pt_text text"> PORTFOLIO </p>
           <div style={{
@@ -42,7 +42,7 @@ class Portfolio extends React.Component {
         <div className="portfolio_list">
           <div className="portfolio object">
             <div className="pf_left">
-              <Carousel className="carousel" interval={100000}>
+              <Carousel className="carousel" interval={1000000}>
                 <Carousel.Item>
                   <img className="d-block w-100" src={img_classical1} alt="Classical" />
                 </Carousel.Item>
@@ -78,7 +78,7 @@ class Portfolio extends React.Component {
               <div className="pf_right_footer">
                 <button className="pf_link" onClick={(e) => {
                   e.preventDefault();
-                  window.location.href='https://github.com/hanbit-kang/Classical';
+                  window.open('https://github.com/hanbit-kang/Classical', '_blank');
                 }}>
                   Link {'>'}
                 </button>
