@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/mail', function(req, res){
-  sendMail('fchopinof99@gmail.com', '[Portfolio] Contact from '+req.body.email+process.env.ASD, req.body.text);
+  sendMail('fchopinof99@gmail.com', '[Portfolio] Contact from '+req.body.email, req.body.text);
   res.end();
 })
 
