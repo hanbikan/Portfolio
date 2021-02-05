@@ -1,13 +1,10 @@
+require('dotenv').config({path: __dirname + '/.env'});
 const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
-router.get('/mail', function(req, res){
-  return res.json('dd');
-})
-
 router.post('/mail', function(req, res){
-  sendMail('fchopinof99@gmail.com', '[Portfolio] Contact from '+req.body.email, req.body.text);
+  sendMail('fchopinof99@gmail.com', '[Portfolio] Contact from '+req.body.email+process.env.ASD, req.body.text);
   res.end();
 })
 
