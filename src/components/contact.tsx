@@ -3,9 +3,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './contact.css';
 import './md.css';
 import { Check2 } from 'react-bootstrap-icons';
+import axios from 'axios';
 
 class Contact extends React.Component {
-  onKeyup = () => {
+  state = {
+    email: '',
+    text: ''
+  }
+
+  handleKeyup = () => {
     const email = document.getElementById('email') as HTMLInputElement;
     const text = document.getElementById('text') as HTMLInputElement;
     let submit = document.getElementsByClassName('cf_submit')[0] as HTMLElement;
@@ -19,8 +25,20 @@ class Contact extends React.Component {
       submit.style.color = "rgba(255,255,255,0.5)";
     }
   }
+  handleChange = (e) => {
+    this.setState({
+      [e.target.id]:e.target.value
+    });
+  }
 
   handleSubmit = () => {
+    let href = window.location.href;
+    href = href.substr(0,href.length-1);
+    axios.post(href+':3001/api/mail', {
+        email:this.state.email,
+        text:this.state.text
+    })
+
     const email = document.getElementById('email') as HTMLInputElement;
     const text = document.getElementById('text') as HTMLInputElement;
     const contact_form = document.getElementsByClassName('contact_form')[0] as HTMLElement;
@@ -35,9 +53,7 @@ class Contact extends React.Component {
       after_mail.style.opacity = "100";
       contact.style.height = "30rem";
     }, 1000);
-
   }
-
   render(){
     return (
       <div className="Contact" id="Contact">
@@ -48,10 +64,9 @@ class Contact extends React.Component {
             height:'0.25rem'
           }} className="underline"></div>
         </div>
-        <iframe id="mail_iframe" name="mail_iframe"></iframe>
-        <form className="contact_form object" method="post" target="mail_iframe" action="http://localhost:3001/api/mail" onSubmit={this.handleSubmit}>
-          <input type="email" id="email" name="email" placeholder="이메일을 남겨주세요." autoComplete="off" onKeyUp={this.onKeyup} required />
-          <textarea className="my_scroll" id="text" name="text" placeholder="내용을 입력하세요." autoComplete="off" onKeyUp={this.onKeyup} required />
+        <form className="contact_form object" action="javascript:void(0);" onSubmit={this.handleSubmit}>
+          <input type="email" id="email" placeholder="이메일을 남겨주세요." value={this.state.email} autoComplete="off" onKeyUp={this.handleKeyup} onChange={this.handleChange} required />
+          <textarea className="my_scroll" id="text" placeholder="내용을 입력하세요." value={this.state.text} autoComplete="off" onKeyUp={this.handleKeyup} onChange={this.handleChange} required />
           <button className="cf_submit" type="submit">전송하기</button>
         </form>
         <div className="after_mail">
