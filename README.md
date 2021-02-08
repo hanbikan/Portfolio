@@ -9,3 +9,4 @@ HTML, CSS, Javascript, Typescript, React.js, Node JS(Express)
     ./node_modules/.bin/pm2 install typescript
     ./node_modules/.bin/pm2 start npm -- start
     ./node_modules/.bin/pm2 start src/index.tsx
+    ./node_modules/.bin/pm2 save
