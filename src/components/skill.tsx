@@ -49,6 +49,7 @@ class Skill extends React.Component {
     sl_hover.style.width = e.target.offsetWidth+'px';
     sl_hover.innerText = e.target.id;
   }
+
   render(){
     return (
       <div className="Skill" id="Skill">
