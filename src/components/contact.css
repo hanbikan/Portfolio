@@ -44,6 +44,7 @@
 .contact_form input::placeholder{color:rgba(255,255,255,0.5);}
 .contact_form textarea{
   background-color: #34495e;
+  resize: none;
   border: 0;
   padding: 0.5rem;
   margin-top: 1rem;
