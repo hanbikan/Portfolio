@@ -10,6 +10,7 @@ import img_nodejs from '../images/skill/nodejs.png';
 import img_ps from '../images/skill/ps.svg';
 import img_ts from '../images/skill/ts.png';
 import img_react from '../images/skill/react.png';
+import img_kotlin from '../images/skill/kotlin.png';
 
 class Skill extends React.Component {
   componentDidMount(){
@@ -68,6 +69,7 @@ class Skill extends React.Component {
           <img className="sl_img" src={img_react} id="Junior" onMouseOver={this.handleHover} />
           <img className="sl_img" src={img_nodejs} id="Middle" onMouseOver={this.handleHover} />
           <img className="sl_img" src={img_mongodb} id="Middle" onMouseOver={this.handleHover} />
+          <img className="sl_img" src={img_kotlin} id="Junior" onMouseOver={this.handleHover} />
           <img className="sl_img" src={img_ps} id="Middle" onMouseOver={this.handleHover} />
         </div>
         <p className="sl_hover"></p>
