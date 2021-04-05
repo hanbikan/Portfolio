@@ -11,4 +11,4 @@ HTML, CSS, Javascript, Typescript, React.js, Node JS(Express)
     ./node_modules/.bin/pm2 start src/index.tsx
     ./node_modules/.bin/pm2 save
 
-*포트포워딩, 환경변수 또는 /server/server.js 설정을 필요로 합니다.
+*포트포워딩, 환경변수 또는 /server/routes/.env 설정을 필요로 합니다.
