@@ -35,14 +35,16 @@ class Skill extends React.Component {
   }
 
   onScroll = () => {
-    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
-    if(!this.isElementUnderBottom(elems[0], 0)){
+    let firstElem = document.getElementsByClassName('pop_in_order')[0] as HTMLElement;
+    if(!this.isElementUnderBottom(firstElem, 0)){
+      window.removeEventListener('scroll', this.onScroll);
+      
+      let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
       elems.forEach((elem:HTMLElement, i:number) => {
-        elem.style.transitionDuration="1s";
+        elem.style.transitionDuration = "1s";
         elem.style.opacity = "100";
         elem.style.transform = "scale(1)";
       })
-      window.removeEventListener('scroll', this.onScroll);
     }
   }
 

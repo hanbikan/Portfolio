@@ -16,23 +16,12 @@ class Index extends React.Component {
   }
 
   onScroll = () => {
-    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('underline') as HTMLCollectionOf<HTMLElement>);
+    let elems:Array<HTMLElement> = Array.from(document.querySelectorAll('.underline,.text,.object'));
     elems.forEach((elem:HTMLElement) => {
       if(!this.isElementUnderBottom(elem, 0)){
-        elem.style.marginLeft = "0";
-        elem.style.opacity = "100";
-      }
-    })
-    elems = Array.from(document.getElementsByClassName('text') as HTMLCollectionOf<HTMLElement>);
-    elems.forEach((elem:HTMLElement) => {
-      if(!this.isElementUnderBottom(elem, 0)){
-        elem.style.marginLeft = "0";
-        elem.style.opacity = "100";
-      }
-    })
-    elems = Array.from(document.getElementsByClassName('object') as HTMLCollectionOf<HTMLElement>);
-    elems.forEach((elem:HTMLElement) => {
-      if(!this.isElementUnderBottom(elem, 0)){
+        if(elem.classList.contains('underline')||elem.classList.contains('text')){
+          elem.style.marginLeft = "0";
+        }
         elem.style.opacity = "100";
       }
     })
