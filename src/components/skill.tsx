@@ -7,15 +7,24 @@ import img_css from '../images/skill/css.png';
 import img_js from '../images/skill/js.png';
 import img_mongodb from '../images/skill/mongodb.jpeg';
 import img_nodejs from '../images/skill/nodejs.png';
-import img_ps from '../images/skill/ps.svg';
+import img_python from '../images/skill/python.png';
+
+import img_asm from '../images/skill/asm.png';
+import img_cs from '../images/skill/cs.svg';
+import img_vb from '../images/skill/vb.png';
+import img_mysql from '../images/skill/mysql.png';
+import img_ahk from '../images/skill/ahk.png';
+import img_gm from '../images/skill/gm.jpg';
+import img_unity from '../images/skill/unity.png';
 import img_ts from '../images/skill/ts.png';
 import img_react from '../images/skill/react.png';
 import img_kotlin from '../images/skill/kotlin.png';
+import img_ps from '../images/skill/ps.svg';
 
 class Skill extends React.Component {
   componentDidMount(){
     window.addEventListener('scroll', this.onScroll);
-    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('sl_img') as HTMLCollectionOf<HTMLElement>);
+    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
     let delay:number = 0.4;
     const timeToAdded:number = 0.07;
     elems.forEach((elem:HTMLElement) => {
@@ -26,7 +35,7 @@ class Skill extends React.Component {
   }
 
   onScroll = () => {
-    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('sl_img') as HTMLCollectionOf<HTMLElement>);
+    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
     if(!this.isElementUnderBottom(elems[0], 0)){
       elems.forEach((elem:HTMLElement, i:number) => {
         elem.style.transitionDuration="1s";
@@ -43,14 +52,6 @@ class Skill extends React.Component {
     return top > innerHeight - offsetY;
   }
 
-  handleHover = (e) => {
-    let sl_hover = document.getElementsByClassName('sl_hover')[0] as HTMLElement;
-    sl_hover.style.left = window.pageXOffset+e.target.getBoundingClientRect().left+'px';
-    sl_hover.style.top = window.pageYOffset+e.target.getBoundingClientRect().top+'px';
-    sl_hover.style.width = e.target.offsetWidth+'px';
-    sl_hover.innerText = e.target.id;
-  }
-
   render(){
     return (
       <div className="Skill" id="Skill">
@@ -61,18 +62,39 @@ class Skill extends React.Component {
             height:'0.5rem'
           }} className="underline"></div>
         </div>
-        <div className="skill_list">
-          <img className="sl_img" src={img_html} id="Middle" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_css} id="Middle" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_js} id="Middle" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_ts} id="Junior" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_react} id="Junior" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_nodejs} id="Middle" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_mongodb} id="Middle" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_kotlin} id="Junior" onMouseOver={this.handleHover} />
-          <img className="sl_img" src={img_ps} id="Middle" onMouseOver={this.handleHover} />
+        
+        <div className="skill_area">
+          <div className="skill_type pop_in_order">
+            <p>Strong</p>
+          </div>
+          <div className="skill_list">
+            <img className="sl_img pop_in_order" src={img_html}  />
+            <img className="sl_img pop_in_order" src={img_css}  />
+            <img className="sl_img pop_in_order" src={img_js}  />
+            <img className="sl_img pop_in_order" src={img_nodejs}  />
+            <img className="sl_img pop_in_order" src={img_mongodb}  />
+            <img className="sl_img pop_in_order" src={img_python}  />
+          </div>
         </div>
-        <p className="sl_hover"></p>
+        
+        <div className="skill_area">
+          <div className="skill_type pop_in_order">
+            <p>Knowledgeable</p>
+          </div>
+          <div className="skill_list">
+            <img className="sl_img pop_in_order" src={img_asm}  />
+            <img className="sl_img pop_in_order" src={img_gm}  />
+            <img className="sl_img pop_in_order" src={img_vb}  />
+            <img className="sl_img pop_in_order" src={img_ahk}  />
+            <img className="sl_img pop_in_order" src={img_ts}  />
+            <img className="sl_img pop_in_order" src={img_react}  />
+            <img className="sl_img pop_in_order" src={img_mysql}  />
+            <img className="sl_img pop_in_order" src={img_kotlin}  />
+            <img className="sl_img pop_in_order" src={img_cs}  />
+            <img className="sl_img pop_in_order" src={img_unity}  />
+            <img className="sl_img pop_in_order" src={img_ps}  />
+          </div>
+        </div>
       </div>
     );
   };
