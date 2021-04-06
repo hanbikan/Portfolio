@@ -15,11 +15,36 @@ class About extends React.Component {
             height:'0.5rem'
           }} className="underline"></div>
         </div>
-        <div className="about_introduce object">
-          <img className="ai_portrait" src={img_portrait}/>
-          <p className="ai_text">
-            <b>초등학생</b> 때 저는 취미로 수십 개의 게임을 만들었으며 싱글플레이 게임의 메모리를 조작하여 게임을 조작하곤 하였고, <b>중학생</b> 시절 포토샵과 영상편집 기술을 통해 블로그를 운영하여 총 54만 명의 방문자 달성을 하기도 하였습니다. 이렇게 컴퓨터를 동반한 다채로운 경험들은 결국 IT 전문가라는 제 꿈을 만들어주었습니다. <b>고등학생</b> 3년은 그 꿈을 위해, 학업이라는 분야에 처음 도전하게 되었고, <b>세종대학교 컴퓨터공학과</b>에 입학하였습니다.
-          </p>
+        <div className="about_introduce">
+          <div className="ai_portrait_area text">
+            <img className="ai_portrait" src={img_portrait}/>
+            <div className="ai_portrait_text_area">
+              <p className="ai_portrait_name">
+                강한빛
+              </p>
+              <p className="ai_portrait_text">
+                1999.11.22 / 인천광역시
+              </p>
+              <p className="ai_portrait_text">
+                세종대학교 컴퓨터공학과 18학번
+              </p>
+            </div>
+          </div>
+
+          <div className="ai_text_area object">
+            <p className="ai_text">
+              저는 클린코드를 지향하며, 필요에 의한 개발을 원칙으로 두고 있습니다.
+            </p>
+            <p className="ai_text">
+              무엇보다 저는 <b>코딩을 무척이나 좋아합니다.</b>
+            </p>
+            <p className="ai_text">
+              초등학교 3학년 시절부터 게임을 만들며 놀았고 지금도 그만큼 좋아합니다.
+            </p>
+            <p className="ai_text">
+              따라서 저는 지치지 않고 지속적으로 성장할 수 있는 개발자입니다.
+            </p>
+          </div>
         </div>
       </div>
     );

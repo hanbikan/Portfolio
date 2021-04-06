@@ -1,4 +1,4 @@
-.About{
+.About {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,36 +7,71 @@
   padding-bottom: 4rem;
 }
 
-.about_title{
+.about_title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about_title .underline{
+.about_title .underline {
   background-color: #bdc3c7;
 }
-.at_text{
+
+.at_text {
   font-size: 4rem;
 }
 
-.about_introduce{
+.about_introduce {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
   padding: 2rem;
-  width:80%;
+  width: 80%;
 }
-.ai_portrait{
+.ai_portrait_area {
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  border-right: 5px solid #dfe3e6;
+}
+.ai_portrait {
   height: 12.5rem;
-  border-radius: 2.5rem 2.5rem;
-  margin-bottom: 1rem;
+  border-radius: 6.25rem 6.25rem;
 }
-.ai_text{
+.ai_portrait_text_area {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+}
+.ai_portrait_name {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.ai_portrait_text {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  color: #343a40;
+}
+
+.ai_text_area {
+  margin-top: 5rem;
+}
+.ai_text {
+  text-align: center;
   min-width: 30rem;
   max-width: 50rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
   margin-left: 3rem;
+}
+.ai_text b {
+  color: #de0581;
 }
