@@ -32,6 +32,7 @@ class About extends React.Component {
           </div>
 
           <div className="ai_text_area object">
+            <p className="double_quotes">“</p>
             <p className="ai_text">
               저는 클린코드를 지향하며, 필요에 의한 개발을 원칙으로 두고 있습니다.
             </p>
@@ -44,6 +45,7 @@ class About extends React.Component {
             <p className="ai_text">
               따라서 저는 지치지 않고 지속적으로 성장할 수 있는 개발자입니다.
             </p>
+            <p className="double_quotes">”</p>
           </div>
         </div>
       </div>
