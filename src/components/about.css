@@ -36,6 +36,7 @@
   border-right: 5px solid #dfe3e6;
 }
 .ai_portrait {
+  width: 12.5rem;
   height: 12.5rem;
   border-radius: 6.25rem 6.25rem;
 }
