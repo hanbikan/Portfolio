@@ -10,8 +10,6 @@ import img_classical3 from '../images/portfolio/classical/3.png';
 import img_classical4 from '../images/portfolio/classical/4.png';
 import img_classical5 from '../images/portfolio/classical/5.png';
 import img_portfolio from '../images/portfolio/portfolio/main.png';
-import img_portfolio1 from '../images/portfolio/portfolio/1.png';
-import img_portfolio2 from '../images/portfolio/portfolio/2.png';
 import img_YSCT from '../images/portfolio/YSCT/main.png';
 import img_YSCT1 from '../images/portfolio/YSCT/1.png';
 import img_YSCT2 from '../images/portfolio/YSCT/2.png';
@@ -41,7 +39,7 @@ class Portfolio extends React.Component {
     return (
       <div className="Portfolio" id="Portfolio">
         <div className="portfolio_title">
-          <p className="pt_text text"> PORTFOLIO </p>
+          <p className="pt_text text"> Projects </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
@@ -99,18 +97,7 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="portfolio object">
-            <div className="pf_carousel" onClick={this.handleClick}>
-              <Carousel className="carousel-width" interval={1000000}>
-                <Carousel.Item className="carousel_item">
-                  <img className="d-block img-fluid" src={img_portfolio1} alt="Portfolio" />
-                </Carousel.Item>
-                <Carousel.Item className="carousel_item">
-                  <img className="d-block img-fluid" src={img_portfolio2} alt="Portfolio" />
-                </Carousel.Item>
-              </Carousel>
-              <a className="carousel_cancel color-white">닫기</a>
-            </div>
-            <div className="pf_top" onClick={this.handleClick}>
+            <div className="pf_top" onClick={() => alert('지금 보고 있으십니다!')}>
               <img src={img_portfolio} className="pf_img" />
             </div>
             <div className="pf_bottom">

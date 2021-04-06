@@ -9,7 +9,7 @@ class About extends React.Component {
     return (
       <div className="About" id="About">
         <div className="about_title">
-          <p className="at_text text"> ABOUT </p>
+          <p className="at_text text"> About </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
