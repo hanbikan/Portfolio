@@ -26,7 +26,7 @@ class Skill extends React.Component {
     window.addEventListener('scroll', this.onScroll);
     let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
     let delay:number = 0.4;
-    const timeToAdded:number = 0.07;
+    const timeToAdded:number = 0.05;
     elems.forEach((elem:HTMLElement) => {
       elem.style.transitionDelay = delay+'s';
       delay+=timeToAdded;
@@ -41,8 +41,6 @@ class Skill extends React.Component {
       
       let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
       elems.forEach((elem:HTMLElement, i:number) => {
-        elem.style.transitionDuration = "1s";
-        elem.style.opacity = "100";
         elem.style.transform = "scale(1)";
       })
     }
@@ -65,8 +63,8 @@ class Skill extends React.Component {
           }} className="underline"></div>
         </div>
         
-        <div className="skill_area">
-          <div className="skill_type pop_in_order">
+        <div className="skill_area object">
+          <div className="skill_type">
             <p>Strong</p>
           </div>
           <div className="skill_list">
@@ -79,8 +77,8 @@ class Skill extends React.Component {
           </div>
         </div>
         
-        <div className="skill_area">
-          <div className="skill_type pop_in_order">
+        <div className="skill_area object">
+          <div className="skill_type">
             <p>Knowledgeable</p>
           </div>
           <div className="skill_list">

@@ -16,7 +16,7 @@ class About extends React.Component {
           }} className="underline"></div>
         </div>
         <div className="about_introduce">
-          <div className="ai_portrait_area text">
+          <div className="ai_portrait_area object">
             <img className="ai_portrait" src={img_portrait}/>
             <div className="ai_portrait_text_area">
               <p className="ai_portrait_name">

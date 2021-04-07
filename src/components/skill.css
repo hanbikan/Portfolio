@@ -27,13 +27,13 @@
   margin-top: 2rem;
 }
 .pop_in_order {
-  opacity: 0;
-  transform: scale(0.5);
+  transform: scale(0);
+  transition-duration: 0.8s;
 }
 .skill_type {
   margin-top: 0.5rem;
   color: #95a5a6;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 .skill_list {
   border-top: 1px solid #dfe3e6;
