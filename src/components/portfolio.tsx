@@ -97,7 +97,7 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="portfolio object">
-            <div className="pf_top" onClick={() => alert('지금 보고 있으십니다!')}>
+            <div className="pf_top" onClick={() => alert('You\'re Looking Now!')}>
               <img src={img_portfolio} className="pf_img" />
             </div>
             <div className="pf_bottom">

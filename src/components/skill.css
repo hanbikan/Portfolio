@@ -28,7 +28,7 @@
 }
 .pop_in_order {
   transform: scale(0);
-  transition-duration: 0.8s;
+  transition-duration: 1s;
 }
 .skill_type {
   margin-top: 0.5rem;
