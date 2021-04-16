@@ -30,7 +30,7 @@
   width: 80%;
 }
 .ai_portrait_area {
-  width: 45rem;
+  width: 48rem;
   display: flex;
   align-items: center;
   border-right: 5px solid #dfe3e6;
@@ -38,12 +38,11 @@
 .ai_portrait {
   width: 12.5rem;
   height: 12.5rem;
-  border-radius: 6.25rem 6.25rem;
 }
 .ai_portrait_text_area {
   display: flex;
   flex-direction: column;
-  margin-left: 2.5rem;
+  margin-left: 3rem;
 }
 .ai_portrait_name {
   width: 100%;
@@ -60,6 +59,26 @@
   margin-top: -1rem;
   color: #343a40;
 }
+.ai_link {
+  width: 100%;
+  margin-top: 0.75rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.ai_link_icon {
+  width: 1.75rem;
+}
+.ai_link_src {
+  background-color: #dfe3e685;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-left: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
 
 .ai_text_area {
   margin-top: 2rem;
@@ -73,13 +92,9 @@
   font-size: 4rem;
 }
 .ai_text {
-  text-align: center;
-  width: 80rem;
+  width: 60rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
   margin-left: 3rem;
-}
-.ai_text b {
-  color: #de0581;
 }
