@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './project.css';
 import './md.css';
 import Carousel from 'react-bootstrap/Carousel';
+import img_github from '../images/github.png';
 import img_classical from '../images/project/classical/main.png';
 import img_classical1 from '../images/project/classical/1.png';
 import img_classical2 from '../images/project/classical/2.png';
@@ -91,7 +92,8 @@ class Project extends React.Component {
                   e.preventDefault();
                   window.open('https://github.com/hanbit-kang/Classical', '_blank');
                 }}>
-                  Link {'>'}
+                  <img src={img_github} className="github_project_img"/>
+                  Repository {'>'}
                 </button>
               </div>
             </div>
@@ -116,11 +118,12 @@ class Project extends React.Component {
                 </div>
               </div>
               <div className="pj_bottom_footer">
-                <button className="pj_link" onClick={(e) => {
+              <button className="pj_link" onClick={(e) => {
                   e.preventDefault();
                   window.open('https://github.com/hanbit-kang/Portfolio', '_blank');
                 }}>
-                  Link {'>'}
+                  <img src={img_github} className="github_project_img"/>
+                  Repository {'>'}
                 </button>
               </div>
             </div>
@@ -159,11 +162,12 @@ class Project extends React.Component {
                 </div>
               </div>
               <div className="pj_bottom_footer">
-                <button className="pj_link" onClick={(e) => {
+              <button className="pj_link" onClick={(e) => {
                   e.preventDefault();
-                  window.open('https://github.com/Hanbit-Kang/YouShouldCheckThis', '_blank');
+                  window.open('https://github.com/hanbit-kang/AndroidNotificationForStock', '_blank');
                 }}>
-                  Link {'>'}
+                  <img src={img_github} className="github_project_img"/>
+                  Repository {'>'}
                 </button>
               </div>
             </div>
