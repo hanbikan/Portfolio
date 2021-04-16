@@ -31,14 +31,25 @@
   transition-duration: 1s;
 }
 .skill_type {
-  margin-top: 0.5rem;
-  color: #95a5a6;
-  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  border: 2px solid;
+}
+.skill_type_icon {
+  font-size: 1.5rem;
+}
+.skill_type_text {
+  font-size: 1.25rem;
+  margin-left: 0.45rem;
+  margin-bottom: 0.1rem;
 }
 .skill_list {
-  border-top: 1px solid #dfe3e6;
   padding-top: 1rem;
-  width: 80%;
+  width: 48rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

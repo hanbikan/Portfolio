@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import 'react-bootstrap-icons';
 import './skill.css';
 import './md.css';
 import img_html from '../images/skill/html.png';
 import img_css from '../images/skill/css.png';
 import img_js from '../images/skill/js.png';
-import img_mongodb from '../images/skill/mongodb.jpeg';
+import img_mongodb from '../images/skill/mongodb.png';
 import img_nodejs from '../images/skill/nodejs.png';
 import img_python from '../images/skill/python.png';
 
@@ -20,6 +21,7 @@ import img_ts from '../images/skill/ts.png';
 import img_react from '../images/skill/react.png';
 import img_kotlin from '../images/skill/kotlin.png';
 import img_ps from '../images/skill/ps.svg';
+import { Book, HandThumbsUp } from 'react-bootstrap-icons';
 
 class Skill extends React.Component {
   componentDidMount(){
@@ -65,7 +67,8 @@ class Skill extends React.Component {
         
         <div className="skill_area object">
           <div className="skill_type">
-            <p>Strong</p>
+            <HandThumbsUp className="skill_type_icon"/>
+            <p className="skill_type_text">Strong</p>
           </div>
           <div className="skill_list">
             <img className="sl_img pop_in_order" src={img_html}  />
@@ -78,8 +81,9 @@ class Skill extends React.Component {
         </div>
         
         <div className="skill_area object">
-          <div className="skill_type">
-            <p>Knowledgeable</p>
+        <div className="skill_type">
+            <Book className="skill_type_icon"/>
+            <p className="skill_type_text">Knowledgeable</p>
           </div>
           <div className="skill_list">
             <img className="sl_img pop_in_order" src={img_asm}  />
