@@ -51,7 +51,7 @@ class Menubar extends React.Component {
           <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Home</a>
           <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>About</a>
           <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Skill</a>
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Portfolio</a>
+          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Project</a>
           <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Contact</a>
         </div>
 
@@ -62,7 +62,7 @@ class Menubar extends React.Component {
               <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Home</Nav.Link>
               <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>About</Nav.Link>
               <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Skill</Nav.Link>
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Portfolio</Nav.Link>
+              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Project</Nav.Link>
               <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>

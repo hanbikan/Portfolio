@@ -3,7 +3,7 @@ import React from 'react';
 import Home from '../components/home';
 import About from '../components/about';
 import Skill from '../components/skill';
-import Portfolio from '../components/portfolio';
+import Project from '../components/project';
 import Contact from '../components/contact';
 import Menubar from '../components/menubar';
 import Footer from '../components/footer';
@@ -43,7 +43,7 @@ class Index extends React.Component {
         <Home />
         <About />
         <Skill />
-        <Portfolio />
+        <Project />
         <Contact />
         <Menubar />
         <Footer />
