@@ -81,20 +81,12 @@
 }
 
 .ai_text_area {
-  margin-top: 2rem;
-  margin-bottom: -3rem;
-}
-.double_quotes {
-  margin-top: 3rem;
-  color: #95a5a6;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: -2rem;
 }
 .ai_text {
-  width: 60rem;
+  width: 48rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
-  margin-left: 3rem;
+  font-size: 1.25rem;
 }

@@ -52,17 +52,11 @@ class About extends React.Component {
           </div>
 
           <div className="ai_text_area object">
-            <p className="double_quotes">“</p>
-              <p className="ai_text">
-                저는 <i>코딩을 즐기는 개발자</i> 입니다.
-              </p>
-              <p className="ai_text">
-                초등생 3학년에 시작하여 3년간, 총 35개의 게임을 직접 만들어보면서 개발자라는 꿈을 키웠습니다.
-              </p>
-              <p className="ai_text">
-                대학생이 된 저는 개인 프로젝트를 항상 진행하는데, 이것은 제가 코딩을 진심으로 좋아하기 때문입니다.
-              </p>
-            <p className="double_quotes">”</p>
+            <p className="ai_text">
+              " 저는 <i>코딩을 즐기는 개발자</i> 입니다.
+              초등생 3학년에 시작하여 3년간, 총 35개의 게임을 직접 만들어보면서 개발자라는 꿈을 키웠습니다.
+              대학생이 된 저는 개인 프로젝트를 항상 진행하는데, 이것은 제가 코딩을 진심으로 좋아하기 때문입니다. "
+            </p>
           </div>
         </div>
       </div>
