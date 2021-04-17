@@ -33,7 +33,7 @@
   width: 48rem;
   display: flex;
   align-items: center;
-  border-right: 5px solid #dfe3e6;
+  border-right: 0.3125rem solid #dfe3e6;
 }
 .ai_portrait {
   width: 12.5rem;

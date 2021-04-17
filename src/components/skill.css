@@ -37,15 +37,12 @@
   margin-bottom: 0.5rem;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
-  border: 2px solid;
-}
-.skill_type_icon {
-  font-size: 1.5rem;
+  border-bottom: 1px solid;
 }
 .skill_type_text {
-  font-size: 1.25rem;
-  margin-left: 0.45rem;
-  margin-bottom: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
 }
 .skill_list {
   padding-top: 1rem;
@@ -55,7 +52,7 @@
   justify-content: center;
 }
 .sl_img {
-  box-shadow: 0px 0px 75px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 4.6875rem 0.625rem rgba(0, 0, 0, 0.05);
   width: auto;
   border-radius: 1rem 1rem;
   height: 5rem;

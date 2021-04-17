@@ -67,8 +67,7 @@ class Skill extends React.Component {
         
         <div className="skill_area object">
           <div className="skill_type">
-            <HandThumbsUp className="skill_type_icon"/>
-            <p className="skill_type_text">Strong</p>
+            <p className="skill_type_text"># Strong</p>
           </div>
           <div className="skill_list">
             <img className="sl_img pop_in_order" src={img_html}  />
@@ -82,8 +81,7 @@ class Skill extends React.Component {
         
         <div className="skill_area object">
         <div className="skill_type">
-            <Book className="skill_type_icon"/>
-            <p className="skill_type_text">Knowledgeable</p>
+            <p className="skill_type_text"># Knowledgeable</p>
           </div>
           <div className="skill_list">
             <img className="sl_img pop_in_order" src={img_asm}  />
