@@ -21,6 +21,7 @@
 }
 
 .skill_area {
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,39 +47,14 @@
 }
 .skill_list {
   padding-top: 1rem;
-  width: 48rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .sl_img {
-  box-shadow: 0 0 4.6875rem 0.625rem rgba(0, 0, 0, 0.05);
-  width: auto;
+  box-shadow: 0 0 4.6875rem 0.0625rem rgba(0, 0, 0, 0.15);
   border-radius: 1rem 1rem;
+  width: 5rem;
   height: 5rem;
-  margin: 0.5rem;
-}
-.skill_texts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-}
-.sl_hover {
-  border-radius: 1rem 1rem;
-  height: 5rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition-duration: 0.7s;
-  opacity: 0;
-  font-size: 1rem;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: white;
-  padding-top: 1.75rem;
-}
-.sl_hover:hover {
-  opacity: 100;
+  margin: 1.25rem;
 }
