@@ -15,7 +15,7 @@ import img_cs from '../images/skill/cs.svg';
 import img_vb from '../images/skill/vb.png';
 import img_mysql from '../images/skill/mysql.png';
 import img_ahk from '../images/skill/ahk.png';
-import img_gm from '../images/skill/gm.jpg';
+import img_gm from '../images/skill/gm.png';
 import img_unity from '../images/skill/unity.png';
 import img_ts from '../images/skill/ts.png';
 import img_react from '../images/skill/react.png';
