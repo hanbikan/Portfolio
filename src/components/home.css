@@ -25,7 +25,7 @@
   cursor: pointer;
   opacity: 100;
 }
-.home_text {
+.home__text {
   font-size: 3rem;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -35,6 +35,6 @@
   margin-top: 3rem;
   text-align: center;
 }
-.home_text b {
+.home__text b {
   color: #de0581;
 }

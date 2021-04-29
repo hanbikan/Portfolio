@@ -7,19 +7,19 @@
   padding-bottom: 8rem;
 }
 
-.project_title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project_title .underline {
+.underline--project {
   background-color: #bbdc59;
 }
-.pt_text {
+.title__text {
   font-size: 4rem;
 }
 
-.project_list {
+.content--project {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
   transition-duration: 1s;
 }
 
-.pj_carousel {
+.project__carousel {
   top: 0;
   left: 0;
   width: 100%;
@@ -82,15 +82,15 @@
   display: none;
 }
 
-.pj_top {
+.project-img-area {
   width: 100%;
   cursor: pointer;
 }
-.pj_img {
+.project__img {
   width: 100%;
 }
 
-.pj_bottom {
+.project-description {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.5rem;
@@ -98,7 +98,7 @@
   overflow: hidden;
   width: 100%;
 }
-.pj_bottom_header {
+.project-description__header {
   width: calc(100%-3rem);
   display: flex;
   justify-content: space-between;
@@ -106,13 +106,13 @@
   border-bottom: 0.0625rem solid #dfe3e6;
   height: 3.5rem;
 }
-.pj_title {
+.project__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
   margin-bottom: 0.75rem;
 }
-.pj_bottom_content {
+.project-description__content {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   width: calc(100%-3rem);
@@ -122,14 +122,14 @@
   font-size: 1.2rem;
   height: calc(100% - 7rem);
 }
-.pj_bottom_footer {
+.project-description__footer {
   width: calc(100%-3rem);
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: flex-end;
 }
-.pj_link {
+.project__button {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   background-color: black;
@@ -142,7 +142,7 @@
   border: 0;
   border-radius: 0.5rem 0.5rem;
 }
-.github_project_img {
+.github-img {
   width: 2.25rem;
   height: 2.25rem;
 }

@@ -8,19 +8,19 @@
   background-color: #f0f7f7;
 }
 
-.skill_title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skill_title .underline {
+.underline--skill {
   background-color: #7ed7df;
 }
-.st_text {
+.title__text {
   font-size: 4rem;
 }
 
-.skill_area {
+.skill-area {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   transform: scale(0);
   transition-duration: 1s;
 }
-.skill_type {
+.skill-type {
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -40,18 +40,18 @@
   padding-right: 0.4rem;
   border-bottom: 1px solid;
 }
-.skill_type_text {
+.skill-type__text {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0.25rem;
 }
-.skill_list {
+.skill-list {
   padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.sl_img {
+.skill-list__img {
   box-shadow: 0 0 4.6875rem 0.0625rem rgba(0, 0, 0, 0.15);
   border-radius: 1rem 1rem;
   width: 5rem;

@@ -7,20 +7,20 @@
   padding-bottom: 4rem;
 }
 
-.about_title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about_title .underline {
+.underline--about {
   background-color: #bdc3c7;
 }
 
-.at_text {
+.title__text {
   font-size: 4rem;
 }
 
-.about_introduce {
+.content--about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,29 +29,29 @@
   padding: 2rem;
   width: 80%;
 }
-.ai_portrait_area {
+.profile {
   width: 48rem;
   display: flex;
   align-items: center;
   border-right: 0.3125rem solid #dfe3e6;
 }
-.ai_portrait {
+.profile__img {
   width: 12.5rem;
   height: 12.5rem;
 }
-.ai_portrait_text_area {
+.profile-right {
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
 }
-.ai_portrait_name {
+.profile-right__name {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 350;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-.ai_portrait_text {
+.profile-right__text {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -59,17 +59,14 @@
   margin-top: -1rem;
   color: #343a40;
 }
-.ai_link {
+.link {
   width: 100%;
   margin-top: 0.75rem;
   height: auto;
   display: flex;
   align-items: center;
 }
-.ai_link_icon {
-  width: 1.75rem;
-}
-.ai_link_src {
+.link__address {
   background-color: #dfe3e685;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
@@ -79,12 +76,15 @@
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
+.link__icon {
+  width: 1.75rem;
+}
 
-.ai_text_area {
+.introduce {
   margin-top: 5rem;
   margin-bottom: -2rem;
 }
-.ai_text {
+.introduce__text {
   width: 48rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;

@@ -57,46 +57,49 @@ class Skill extends React.Component {
   render(){
     return (
       <div className="Skill" id="Skill">
-        <div className="skill_title">
-          <p className="st_text text"> Skills </p>
+        <div className="title">
+          <p className="title__text text"> Skills </p>
           <div style={{
             width:'4rem',
             height:'0.5rem'
-          }} className="underline"></div>
+          }} className="underline--skill right-to-left"></div>
         </div>
         
-        <div className="skill_area object">
-          <div className="skill_type">
-            <p className="skill_type_text"># Strong</p>
+        <div className="content--skill">
+          <div className="skill-area object">
+            <div className="skill-type">
+              <p className="skill-type__text"># Strong</p>
+            </div>
+            <div className="skill-list">
+              <img className="skill-list__img pop_in_order" src={img_html}  />
+              <img className="skill-list__img pop_in_order" src={img_css}  />
+              <img className="skill-list__img pop_in_order" src={img_js}  />
+              <img className="skill-list__img pop_in_order" src={img_nodejs}  />
+              <img className="skill-list__img pop_in_order" src={img_mongodb}  />
+              <img className="skill-list__img pop_in_order" src={img_python}  />
+            </div>
           </div>
-          <div className="skill_list">
-            <img className="sl_img pop_in_order" src={img_html}  />
-            <img className="sl_img pop_in_order" src={img_css}  />
-            <img className="sl_img pop_in_order" src={img_js}  />
-            <img className="sl_img pop_in_order" src={img_nodejs}  />
-            <img className="sl_img pop_in_order" src={img_mongodb}  />
-            <img className="sl_img pop_in_order" src={img_python}  />
+          
+          <div className="skill-area object">
+            <div className="skill-type">
+              <p className="skill-type__text"># Knowledgeable</p>
+            </div>
+            <div className="skill-list">
+              <img className="skill-list__img pop_in_order" src={img_asm}  />
+              <img className="skill-list__img pop_in_order" src={img_gm}  />
+              <img className="skill-list__img pop_in_order" src={img_vb}  />
+              <img className="skill-list__img pop_in_order" src={img_ahk}  />
+              <img className="skill-list__img pop_in_order" src={img_ts}  />
+              <img className="skill-list__img pop_in_order" src={img_react}  />
+              <img className="skill-list__img pop_in_order" src={img_mysql}  />
+              <img className="skill-list__img pop_in_order" src={img_kotlin}  />
+              <img className="skill-list__img pop_in_order" src={img_cs}  />
+              <img className="skill-list__img pop_in_order" src={img_unity}  />
+              <img className="skill-list__img pop_in_order" src={img_ps}  />
+            </div>
           </div>
         </div>
         
-        <div className="skill_area object">
-        <div className="skill_type">
-            <p className="skill_type_text"># Knowledgeable</p>
-          </div>
-          <div className="skill_list">
-            <img className="sl_img pop_in_order" src={img_asm}  />
-            <img className="sl_img pop_in_order" src={img_gm}  />
-            <img className="sl_img pop_in_order" src={img_vb}  />
-            <img className="sl_img pop_in_order" src={img_ahk}  />
-            <img className="sl_img pop_in_order" src={img_ts}  />
-            <img className="sl_img pop_in_order" src={img_react}  />
-            <img className="sl_img pop_in_order" src={img_mysql}  />
-            <img className="sl_img pop_in_order" src={img_kotlin}  />
-            <img className="sl_img pop_in_order" src={img_cs}  />
-            <img className="sl_img pop_in_order" src={img_unity}  />
-            <img className="sl_img pop_in_order" src={img_ps}  />
-          </div>
-        </div>
       </div>
     );
   };

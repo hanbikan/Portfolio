@@ -16,17 +16,17 @@ class Index extends React.Component {
   }
 
   onScroll = () => {
-    let elems:Array<HTMLElement> = Array.from(document.querySelectorAll('.underline,.text,.object'));
+    let elems:Array<HTMLElement> = Array.from(document.querySelectorAll('.right-to-left,.text,.object'));
     elems.forEach((elem:HTMLElement) => {
       if(!this.isElementUnderBottom(elem, 0)){
-        if(elem.classList.contains('underline')||elem.classList.contains('text')){
+        if(elem.classList.contains('right-to-left')||elem.classList.contains('text')){
           elem.style.marginLeft = "0";
         }
         elem.style.opacity = "100";
       }
     })
 
-    let lastElem = document.getElementsByClassName('contact_form')[0] as HTMLElement;
+    let lastElem = document.getElementsByClassName('contact-form')[0] as HTMLElement;
     if(!this.isElementUnderBottom(lastElem, 0)){
       window.removeEventListener('scroll', this.onScroll);
     }
