@@ -7,16 +7,8 @@
   padding-bottom: 8rem;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .underline--project {
   background-color: #bbdc59;
-}
-.title__text {
-  font-size: 4rem;
 }
 
 .content--project {
@@ -48,11 +40,11 @@
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.carousel_cancel {
+.project__carousel__cancel {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
-.carousel_cancel:hover {
+.project__carousel__cancel:hover {
   cursor: pointer;
 }
 .carousel-width {
@@ -68,7 +60,7 @@
   width: 70%;
   z-index: 2;
 }
-.carousel_item {
+.project__carousel__item {
   width: 100%;
   height: 100%;
 }

@@ -47,23 +47,23 @@ class Menubar extends React.Component {
   render(){
     return (
       <div className="Menubar">
-        <div className="navbar_pc">
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Home</a>
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>About</a>
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Skill</a>
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Project</a>
-          <a className="navbar_link color-black no-text-decoration" onClick={this.handleClick}>Contact</a>
+        <div className="navbar--pc">
+          <a className="navbar--pc__link color-black no-text-decoration" onClick={this.handleClick}>Home</a>
+          <a className="navbar--pc__link color-black no-text-decoration" onClick={this.handleClick}>About</a>
+          <a className="navbar--pc__link color-black no-text-decoration" onClick={this.handleClick}>Skill</a>
+          <a className="navbar--pc__link color-black no-text-decoration" onClick={this.handleClick}>Project</a>
+          <a className="navbar--pc__link color-black no-text-decoration" onClick={this.handleClick}>Contact</a>
         </div>
 
-        <Navbar className="navbar_mobile" expand="lg" onToggle={this.setNavExpanded} expanded={this.state.navExpanded}>
-          <Navbar.Toggle className="navbar_toggle ml-auto" aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="navbar_collapse" id="basic-navbar-nav">
+        <Navbar className="navbar--mobile" expand="lg" onToggle={this.setNavExpanded} expanded={this.state.navExpanded}>
+          <Navbar.Toggle className="navbar__toggle ml-auto" aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse className="navbar__collapse" id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Home</Nav.Link>
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>About</Nav.Link>
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Skill</Nav.Link>
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Project</Nav.Link>
-              <Nav.Link className="navbar_mobile_link color-black no-text-decoration" onClick={this.handleClick}>Contact</Nav.Link>
+              <Nav.Link className="navbar--mobile__link color-black no-text-decoration" onClick={this.handleClick}>Home</Nav.Link>
+              <Nav.Link className="navbar--mobile__link color-black no-text-decoration" onClick={this.handleClick}>About</Nav.Link>
+              <Nav.Link className="navbar--mobile__link color-black no-text-decoration" onClick={this.handleClick}>Skill</Nav.Link>
+              <Nav.Link className="navbar--mobile__link color-black no-text-decoration" onClick={this.handleClick}>Project</Nav.Link>
+              <Nav.Link className="navbar--mobile__link color-black no-text-decoration" onClick={this.handleClick}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

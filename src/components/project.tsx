@@ -32,7 +32,7 @@ class Project extends React.Component {
       }
       pj_carousel.style.display = "flex";
     }
-    if(e.target.className.indexOf('project__carousel')!=-1 || e.target.className.indexOf('carousel_cancel')!=-1){
+    if(e.target.className.indexOf('project__carousel')!=-1 || e.target.className.indexOf('project__carousel__cancel')!=-1){
       let pj_carousel = document.getElementsByClassName('project__carousel')[this.state.curIndexOfPfCarousel] as HTMLElement;
       pj_carousel.style.display = "none";
     }
@@ -52,23 +52,23 @@ class Project extends React.Component {
           <div className="project object">
             <div className="project__carousel" onClick={this.handleClick}>
               <Carousel className="carousel-width" interval={1000000}>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid" src={img_classical1} alt="Classical" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid" src={img_classical2} alt="Classical" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid" src={img_classical3} alt="Classical" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid" src={img_classical4} alt="Classical" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid" src={img_classical5} alt="Classical" />
                 </Carousel.Item>
               </Carousel>
-              <a className="carousel_cancel color-white">닫기</a>
+              <a className="project__carousel__cancel color-white">닫기</a>
             </div>
 
             <div className="project-info">
@@ -139,17 +139,17 @@ class Project extends React.Component {
           <div className="project object">
             <div className="project__carousel" onClick={this.handleClick}>
               <Carousel className="carousel-height" interval={1000000}>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid-height" src={img_YSCT1} alt="이건 아셔야겠는데요" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid-height" src={img_YSCT2} alt="이건 아셔야겠는데요" />
                 </Carousel.Item>
-                <Carousel.Item className="carousel_item">
+                <Carousel.Item className="project__carousel__item">
                   <img className="d-block img-fluid-height" src={img_YSCT3} alt="이건 아셔야겠는데요" />
                 </Carousel.Item>
               </Carousel>
-              <a className="carousel_cancel color-white">닫기</a>
+              <a className="project__carousel__cancel color-white">닫기</a>
             </div>
 
             <div className="project-info">

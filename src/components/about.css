@@ -7,17 +7,8 @@
   padding-bottom: 4rem;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .underline--about {
   background-color: #bdc3c7;
-}
-
-.title__text {
-  font-size: 4rem;
 }
 
 .content--about {

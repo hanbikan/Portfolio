@@ -26,7 +26,7 @@ import { Book, HandThumbsUp } from 'react-bootstrap-icons';
 class Skill extends React.Component {
   componentDidMount(){
     window.addEventListener('scroll', this.onScroll);
-    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
+    let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop-in-order') as HTMLCollectionOf<HTMLElement>);
     let delay:number = 0.4;
     const timeToAdded:number = 0.05;
     elems.forEach((elem:HTMLElement) => {
@@ -37,11 +37,11 @@ class Skill extends React.Component {
   }
 
   onScroll = () => {
-    let firstElem = document.getElementsByClassName('pop_in_order')[0] as HTMLElement;
+    let firstElem = document.getElementsByClassName('pop-in-order')[0] as HTMLElement;
     if(!this.isElementUnderBottom(firstElem, 0)){
       window.removeEventListener('scroll', this.onScroll);
       
-      let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop_in_order') as HTMLCollectionOf<HTMLElement>);
+      let elems:Array<HTMLElement> = Array.from(document.getElementsByClassName('pop-in-order') as HTMLCollectionOf<HTMLElement>);
       elems.forEach((elem:HTMLElement, i:number) => {
         elem.style.transform = "scale(1)";
       })
@@ -71,12 +71,12 @@ class Skill extends React.Component {
               <p className="skill-type__text"># Strong</p>
             </div>
             <div className="skill-list">
-              <img className="skill-list__img pop_in_order" src={img_html}  />
-              <img className="skill-list__img pop_in_order" src={img_css}  />
-              <img className="skill-list__img pop_in_order" src={img_js}  />
-              <img className="skill-list__img pop_in_order" src={img_nodejs}  />
-              <img className="skill-list__img pop_in_order" src={img_mongodb}  />
-              <img className="skill-list__img pop_in_order" src={img_python}  />
+              <img className="skill-list__img pop-in-order" src={img_html}  />
+              <img className="skill-list__img pop-in-order" src={img_css}  />
+              <img className="skill-list__img pop-in-order" src={img_js}  />
+              <img className="skill-list__img pop-in-order" src={img_nodejs}  />
+              <img className="skill-list__img pop-in-order" src={img_mongodb}  />
+              <img className="skill-list__img pop-in-order" src={img_python}  />
             </div>
           </div>
           
@@ -85,17 +85,17 @@ class Skill extends React.Component {
               <p className="skill-type__text"># Knowledgeable</p>
             </div>
             <div className="skill-list">
-              <img className="skill-list__img pop_in_order" src={img_asm}  />
-              <img className="skill-list__img pop_in_order" src={img_gm}  />
-              <img className="skill-list__img pop_in_order" src={img_vb}  />
-              <img className="skill-list__img pop_in_order" src={img_ahk}  />
-              <img className="skill-list__img pop_in_order" src={img_ts}  />
-              <img className="skill-list__img pop_in_order" src={img_react}  />
-              <img className="skill-list__img pop_in_order" src={img_mysql}  />
-              <img className="skill-list__img pop_in_order" src={img_kotlin}  />
-              <img className="skill-list__img pop_in_order" src={img_cs}  />
-              <img className="skill-list__img pop_in_order" src={img_unity}  />
-              <img className="skill-list__img pop_in_order" src={img_ps}  />
+              <img className="skill-list__img pop-in-order" src={img_asm}  />
+              <img className="skill-list__img pop-in-order" src={img_gm}  />
+              <img className="skill-list__img pop-in-order" src={img_vb}  />
+              <img className="skill-list__img pop-in-order" src={img_ahk}  />
+              <img className="skill-list__img pop-in-order" src={img_ts}  />
+              <img className="skill-list__img pop-in-order" src={img_react}  />
+              <img className="skill-list__img pop-in-order" src={img_mysql}  />
+              <img className="skill-list__img pop-in-order" src={img_kotlin}  />
+              <img className="skill-list__img pop-in-order" src={img_cs}  />
+              <img className="skill-list__img pop-in-order" src={img_unity}  />
+              <img className="skill-list__img pop-in-order" src={img_ps}  />
             </div>
           </div>
         </div>

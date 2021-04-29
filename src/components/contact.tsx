@@ -69,7 +69,7 @@ class Contact extends React.Component {
         <div className="context--contact">
           <form className="contact-form object" action="javascript:void(0);" onSubmit={this.handleSubmit}>
             <input className="contact-form__email" type="email" id="email" placeholder="이메일을 남겨주세요." value={this.state.email} autoComplete="off" onKeyUp={this.handleKeyup} onChange={this.handleChange} required />
-            <textarea className="contact-form__content my_scroll" id="text" placeholder="내용을 입력하세요." value={this.state.text} autoComplete="off" onKeyUp={this.handleKeyup} onChange={this.handleChange} required />
+            <textarea className="contact-form__content scroll" id="text" placeholder="내용을 입력하세요." value={this.state.text} autoComplete="off" onKeyUp={this.handleKeyup} onChange={this.handleChange} required />
             <button className="contact-form__submit" type="submit">전송하기</button>
           </form>
           <div className="after-mail">
